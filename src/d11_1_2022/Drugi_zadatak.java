@@ -5,12 +5,9 @@ public class Drugi_zadatak {
 	public static void main(String[] args) {
 		SmartAirConditioning a = new SmartAirConditioning();
 		a.marka = "Samsung";
-		a.potrosnjaHladjenje = 250;
-		;
-		a.potrosnjaGrejanje = 350;
-		;
+		a.potrosnjaGrejanje = 3;
 		a.temperatura = 20;
-		a.mod = "Hladi";
+		a.mod = true;;
 		a.stampaj();
 		a.mesecnaPotrosnja();
 		a.novac();
@@ -18,12 +15,9 @@ public class Drugi_zadatak {
 
 		SmartAirConditioning b = new SmartAirConditioning();
 		b.marka = "Vox";
-		b.potrosnjaHladjenje = 450;
-		;
-		b.potrosnjaGrejanje = 760;
-		;
+		b.potrosnjaHladjenje = 2;
 		b.temperatura = 18;
-		b.mod = "Greje";
+		b.mod = false;
 		b.stampaj();
 		b.mesecnaPotrosnja();
 		b.novac();

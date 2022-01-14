@@ -5,27 +5,29 @@ public class SmartAirConditioning {
 	int potrosnjaHladjenje;
 	int potrosnjaGrejanje;
 	int temperatura;
-	String mod;
+	boolean mod;
 
 	public void stampaj() {
-		System.out.println(this.marka + " " + this.mod + " " + this.temperatura);
+		System.out.println(this.marka + " " + " " + this.temperatura + " stepeni Celzijusa.");
 	}
 
-	public void mesecnaPotrosnja() {
+	public int mesecnaPotrosnja() {
 		int potrosnja;
-
-		potrosnja = (30 * potrosnjaGrejanje) + (15 * potrosnjaHladjenje);
-		System.out.println("Mesecna potrosnja iznosi " + potrosnja + " kW/h.");
+		if (mod) {
+			potrosnja = 30 * 15 * potrosnjaGrejanje;
+		} else
+			potrosnja = 30 * 15 * potrosnjaHladjenje;
+		return potrosnja;
 	}
 
 	public void novac() {
-		int suma = this.potrosnjaGrejanje + this.potrosnjaGrejanje;
-		int jeftinaStruja = 350;
-		int skupaStruja = suma - jeftinaStruja;
-		jeftinaStruja = 350 * 6;
-		skupaStruja = skupaStruja * 9;
-		int racun = jeftinaStruja + skupaStruja;
-		System.out.println("Racun iznosi " + racun + " dinara.");
-	}
+		int suma = mesecnaPotrosnja();		
+			int jeftinaStruja = 350;
+			int skupaStruja = suma - jeftinaStruja;
+			jeftinaStruja = 350 * 6;
+			skupaStruja = skupaStruja * 9;
+			int racun = jeftinaStruja + skupaStruja;
+			System.out.println("Racun iznosi " + racun + " dinara.");
+		}
 
-}
+	}
