@@ -11,7 +11,7 @@ public class SmartAirConditioning {
 		System.out.println(this.marka + " " + " " + this.temperatura + " stepeni Celzijusa.");
 	}
 
-	public int mesecnaPotrosnja() {
+	private int mesecnaPotrosnja() {
 		int potrosnja;
 		if (mod) {
 			potrosnja = 30 * 15 * potrosnjaGrejanje;

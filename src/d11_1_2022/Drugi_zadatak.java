@@ -9,7 +9,6 @@ public class Drugi_zadatak {
 		a.temperatura = 20;
 		a.mod = true;;
 		a.stampaj();
-		a.mesecnaPotrosnja();
 		a.novac();
 		System.out.println();
 
@@ -19,7 +18,6 @@ public class Drugi_zadatak {
 		b.temperatura = 18;
 		b.mod = false;
 		b.stampaj();
-		b.mesecnaPotrosnja();
 		b.novac();
 
 	}
