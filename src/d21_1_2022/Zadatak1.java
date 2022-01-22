@@ -15,10 +15,7 @@ public class Zadatak1 {
 
 		System.out.println("Radnik 1: " + menadzer.naziv + " ima platu " + menadzer.plata + " dinara.");
 		System.out.println("Radnik 2: " + magacioner.naziv + " ima platu " + magacioner.plata + " dinara.");
-		System.out.println("Prosecna plata je ");
-		for(int i = 0; i < sektori.size(); i++) {
-			
-		}
+
 	}
 
 }
