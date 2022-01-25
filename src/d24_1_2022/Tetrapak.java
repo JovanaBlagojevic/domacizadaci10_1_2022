@@ -34,7 +34,6 @@ public class Tetrapak extends Ambalaza {
 
 	@Override
 	public double cena() {
-		int cena = 0;
 		if (reciklaza) {
 			return (this.tezina() * 1.5) + this.osnovnaCena;
 		} else
